@@ -282,8 +282,9 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+    min-width: 300px;
+    height: auto;
   background: url("../img/kiranbg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
@@ -291,9 +292,14 @@ h6 {
 
 @media (min-width: 992px) {
   #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/kiranbg.jpg") top right no-repeat;
+    background-size: cover;
     padding-left: 160px;
   }
 }
+
 
 #hero:before {
   content: "";
